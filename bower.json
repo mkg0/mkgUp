@@ -1,0 +1,13 @@
+{
+  "name": "mkgUp",
+  "description": "",
+  "main": [
+    "dist/mkgUp.min.js",
+    "dist/mkgUp.min.css"
+  ],
+  "authors": [
+    "mkg <mehmetkamilgulen@gmail.com> (http://mkglab.com)"
+  ],
+  "license": "MIT",
+  "dependencies": {}
+}

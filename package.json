@@ -1,0 +1,42 @@
+{
+  "name": "mkgUp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "readme.md",
+  "directories": {},
+  "scripts": {},
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "production": false,
+  "author": [
+    "mkg <mehmetkamilgulen@gmail.com> (http://mkglab.com)"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-add-src": "^0.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-live-server": "0.0.29",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "main-bower-files": "^2.11.1"
+  },
+  "keywords": [
+    "jQuery",
+    "plugin"
+  ]
+}

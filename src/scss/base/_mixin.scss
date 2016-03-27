@@ -1,0 +1,110 @@
+
+@mixin transition($args:all 200ms ease-in-out) {-webkit-transition: $args;-moz-transition: $args;-ms-transition: $args;-o-transition: $args;
+  transition: $args;
+}
+
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin absoluteFull($margin:0){
+  position:absolute;
+  top:$margin;
+  right:$margin;
+  bottom:$margin;
+  left:$margin;
+}
+
+
+@mixin contraBackgroundColor($color, $light: #FFF, $dark: #000) {
+   background-color: $color;
+   @if (lightness($color) > 50) {
+      color: $dark;
+   } @else {
+      color: $light;
+   }
+};
+
+@mixin contraBackground($color, $light: #FFF, $dark: #000) {
+   @if (lightness($color) > 50) {
+      background-color: $dark;
+   } @else {
+      background-color: $light;
+   }
+};
+
+
+@mixin contraColor($color, $light: #FFF, $dark: #000) {
+   @if (lightness($color) > 50) {
+      color: $dark;
+   } @else {
+      color: $light;
+   }
+};
+@mixin contraFill($color, $light: #FFF, $dark: #000) {
+   @if (lightness($color) > 50) {
+      fill: $dark;
+   } @else {
+      fill: $light;
+   }
+};
+
+
+@mixin responsive($min:null, $max:null) {
+    @if($max == null and $min == null){$max:'xs';}
+
+    @if($max =='xs'){$max:768-1;}//768px
+    @if($max =='sm'){$max:992-1;}//992px
+    @if($max =='md'){$max:1200-1;}//1200px
+    @if($max =='lg'){$max:1500-1;}//1500px
+    @if($max =='xl'){$max:null;}
+
+    @if($min =='xs'){$min:null;}//768px
+    @if($min =='sm'){$min:768;}//992px
+    @if($min =='md'){$min:992;}//1200px
+    @if($min =='lg'){$min:1200;}//1500px
+    @if($min =='xl'){$min:1500;}
+
+
+    @if( $min == null and $max != null){
+      @media (max-width: #{$max}px) {
+        @content;
+      }
+    }@else if( $min !=null and $max == null){
+      @media (min-width: #{$min}px) {
+        @content;
+      }
+    }@else if( $min !=null and $max != null){
+      @media (min-width: #{$min}px) and (max-width: #{$max}px) {
+        @content;
+      }
+    }@else{
+      @content;
+    }
+
+
+
+}
+
+
+/* ====================================== */
+
+@mixin cols($col-xs:1,$col-sm:2,$col-md:3,$col-lg:4,$col-xl:4){
+  @extend .cols-xs-#{12/$col-xs};
+  @extend .cols-sm-#{12/$col-sm};
+  @extend .cols-md-#{12/$col-md};
+  @extend .cols-lg-#{12/$col-lg};
+  @extend .cols-xl-#{12/$col-xl};
+}
+

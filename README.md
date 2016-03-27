@@ -37,19 +37,19 @@ $('#targetDiv').mkgUp('scroll');//maybe u just want to scroll
 
 ### Simple Usage
 __.mkgUp(action)__
------
+- - -
 action: string //highlight, coverBack, loading, disable, tip
 
 ### With options and shorthand callback
 __.mkgUp(action, {options}, callback)__
------
+- - -
 action: string //highlight, coverBack, loading, disable, tip
 options: javascript object. every action has difirent properties
 callback: Function
  
 ### Additional tooltip styled inform text
 __.mkgUp(tipText, action, {options}, callback)__
------
+- - -
 tipText: string
 action: string //highlight, coverBack, loading, disable, tip
 options: javascript object. every action has difirent properties

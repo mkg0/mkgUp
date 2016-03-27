@@ -1,8 +1,5 @@
-# mkgUp Alpha
-------
-
+## mkgUp Alpha
 it's a basic jquery plugin how improve user interaction for mobile and web UI.
-
 
 ## Main Actions
 - **highlight**: to highlight target content
@@ -12,21 +9,21 @@ it's a basic jquery plugin how improve user interaction for mobile and web UI.
 - **disable**: to coverup target area for be unaccessable by user
 - **tip**: additional inform tooltip for the target area. it usable with other actions
 
-# Quick Start
+## Quick Start
 Get the latest [release]() of mkgUp  and import the stylesheet to head of the page
 
-```
+```html
 <link rel="stylesheet" href="mkgUp/mkgUp.min.css" />
 ```
 
 Put the script right after jQuery:
-```
+```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="mkgUp/mkgUp.min.js"></script>
 ```
 
 then just call plugin function with `mkgUp()`:
-```
+```js
 $('#targetDiv').mkgUp();
 
 $('#targetDiv').mkgUp('This is Highlighted Content!!!');
@@ -39,30 +36,30 @@ $('#targetDiv').mkgUp('scroll');//maybe u just want to scroll
 ```
 
 ### Simple Usage
-> **.mkgUp(action)**
-> -----
-> action: string //highlight, coverBack, loading, disable, tip
+**.mkgUp(action)**
+-----
+action: string //highlight, coverBack, loading, disable, tip
 
 ### With options and shorthand callback
-> **.mkgUp(action, {options}, callback)**
-> -----
-> action: string //highlight, coverBack, loading, disable, tip
-> options: javascript object. every action has difirent properties
-> callback: Function
+**.mkgUp(action, {options}, callback)**
+-----
+action: string //highlight, coverBack, loading, disable, tip
+options: javascript object. every action has difirent properties
+callback: Function
  
 ### Additional tooltip styled inform text
-> **.mkgUp(tipText, action, {options}, callback)**
-> -----
-> tipText: string
-> action: string //highlight, coverBack, loading, disable, tip
-> options: javascript object. every action has difirent properties
-> callback: Function
+**.mkgUp(tipText, action, {options}, callback)**
+-----
+tipText: string
+action: string //highlight, coverBack, loading, disable, tip
+options: javascript object. every action has difirent properties
+callback: Function
 
-# Documentation
+## Documentation
 _preparing_
 
-# Demo
+## Demo
 _preparing_
 
-# License
+## License
 The code and the documentation are released under the MIT License.

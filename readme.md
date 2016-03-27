@@ -61,7 +61,7 @@ $('#targetDiv').mkgUp('scroll');//maybe u just want to scroll
 # Documentation
 _preparing_
 
-# Documentation
+# Demo
 _preparing_
 
 # License

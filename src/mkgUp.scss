@@ -1,6 +1,3 @@
-/*======= BASE =======*/
-@import "base/mixin";
-
 
 @keyframes circle{
     0%{transform: rotate(0);}
@@ -38,8 +35,8 @@
         &-bottom{@extend .mkgUp_coverback-left;z-index: 9999;}
         &-right{@extend .mkgUp_coverback-left;top:0;z-index: 9999;}
         }
-    &_disable{background: #dedede url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAOS5m7GjMhiIIHnJ3edhQvCBECKwILIAmBBdAGQIADSDhDPYoLCMgAAAABJRU5ErkJggg==);opacity:0;
-        @include absoluteFull;
+    &_disable{background: #dedede url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKElEQVQIW2NkQAOS5m7GjMhiIIHnJ3edhQvCBECKwILIAmBBdAGQIADSDhDPYoLCMgAAAABJRU5ErkJggg==);opacity:0;position: absolute;top:0;left:0;right:0;bottom:0;
+
     }
     &_loading{position: absolute;z-index: 9999;background:rgba(#dedede,1);opacity:0;text-align: center;
         &:before{content:'';width:1px;height:100%;vertical-align: middle;display: inline-block;}//ortala

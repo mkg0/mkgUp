@@ -7,11 +7,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="../dist/mkgUp.js" type="text/javascript"></script>
         <link rel="stylesheet" href="../dist/mkgUp.css">
-        <script type="text/javascript">
-            $(document).ready(function(){
-
-            })
-        </script>
     </head>
     <body>
 
@@ -22,10 +17,14 @@
         <div class="mkgUp_tip mkgUp_tip--left"></div>
     </div>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-<div id="superim">
+<div>
 
     <h1>Demo</h1>
-    <button onclick="$('.deneme').mkgUp('disable','disabled content',{tip:{duration:0,position:'center'}});" style="cursor:pointer;padding: 15px;background: #ccc;border:0;">.mkgUp()</button>
+    <button onclick="$('.deneme').mkgUp('loading','loading data...',{tip:{duration:0,position:'center'}});" style="cursor:pointer;padding: 15px;background: #ccc;border:0;">.mkgUp()</button>
+
+    <button onclick="$('.deneme2').mkgUp('disableToggle',{scroll:true,tip:{duration:0,position:'top'}});" style="cursor:pointer;padding: 15px;background: #ccc;border:0;">.mkgUp()</button>
+
+    <button onclick="$('input[type=text]').mkgUp('highlight','custom inform text',{tip:{position:'right'}});" style="cursor:pointer;padding: 15px;background: #ccc;border:0;">.mkgUp()</button>
     <p>
 </div>
 <div id="lipsum">
@@ -33,13 +32,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 Suspendisse faucibus libero ut rhoncus luctus. Maecenas neque justo, commodo id luctus quis, convallis ac turpis. Sed fermentum in dui ut dictum. Donec eu tempor lectus, eget dictum purus. Sed non semper enim. Curabitur vitae orci nec felis condimentum molestie. Nulla facilisi. Phasellus volutpat, augue at rutrum congue, neque lectus pellentesque libero, feugiat eleifend neque lacus vel neque. Sed ut sem varius, imperdiet turpis at, vulputate lectus. Aliquam vitae eros mauris. Duis sem mauris, commodo a arcu nec, suscipit maximus enim. Nullam finibus et quam sit amet interdum.
 </p>
 <div id="deneme" class="deneme" style="margin 20px auto;padding:20px;background:rgba(0,0,0,0.1);text-align:center;display:inline-block">
-    <img id="" src="img/google.jpg"  alt="">
+    <img id="" src="../img/google.jpg"  alt="">
     <p style="max-width:350px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ipsam, sint! Voluptate aliquam molestias dolor ut accusantium voluptatibus accusamus sit in debitis illo quos, incidunt consequatur. Tempore incidunt eaque, doloremque!</p>
 </div>
 
 
-<div id="deneme2" class="deneme2" style="margin 20px auto;padding:20px;background:rgba(0,0,0,0.1);text-align:center;display:inline-block;position:fixed;top:200px;right:20px;">
-    <img id="" src="img/google.jpg"  alt="">
+<div id="deneme2" class="deneme2" style="margin 20px auto;padding:20px;background:rgba(0,0,0,0.1);text-align:center;display:inline-block;">
+    <img id="" src="../img/google.jpg"  alt="">
     <p style="max-width:350px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ipsam, sint! Voluptate aliquam molestias dolor ut accusantium voluptatibus accusamus sit in debitis illo quos, incidunt consequatur. Tempore incidunt eaque, doloremque!</p>
 </div>
 

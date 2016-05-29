@@ -1,9 +1,13 @@
 {
   "name": "mkgUp",
   "description": "",
+  "version": "0.0.2",
   "main": [
-    "dist/mkgUp.min.js",
-    "dist/mkgUp.min.css"
+    "dist/mkgUp.js",
+    "dist/mkgUp.css"
+  ],
+  "ignore": [
+    "node_modules"
   ],
   "authors": [
     "mkg <mehmetkamilgulen@gmail.com> (http://mkglab.com)"

@@ -1,5 +1,8 @@
-## mkgUp Alpha
-it's a basic jquery plugin how improve user interaction for mobile and web UI.
+# depricated
+depricated for library agnostic, modular and functional build. check this out [here]()
+
+## mkgUp
+it's a basic jquery plugin to enchange user interaction for mobile and web UI.
 
 ## Main Actions
 - **highlight**: to highlight target content
@@ -46,7 +49,7 @@ __.mkgUp(action, {options}, callback)__
 action: string //highlight, coverBack, loading, disable, tip
 options: javascript object. every action has difirent properties
 callback: Function
- 
+
 ### Additional tooltip styled inform text
 __.mkgUp(tipText, action, {options}, callback)__
 - - -
@@ -54,12 +57,6 @@ tipText: string
 action: string //highlight, coverBack, loading, disable, tip
 options: javascript object. every action has difirent properties
 callback: Function
-
-## Documentation
-_preparing_
-
-## Demo
-_preparing_
 
 ## License
 The code and the documentation are released under the MIT License.
